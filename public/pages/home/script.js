@@ -3,7 +3,7 @@ let api = ``;
 if (window.location.host.includes(`localhost`) || window.location.host.includes(`8080`)) {
     api = `http://localhost:3000`;
 } else {
-    api = window.location;
+    api = window.location.origin;
 }
 
 if (api != ``) {
