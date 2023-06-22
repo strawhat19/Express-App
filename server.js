@@ -14,7 +14,7 @@ let openWeatherCurrentWeatherURL = `https://api.openweathermap.org/data/2.5/weat
 const app = express();
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, `public`)));
+app.use(express.static(path.join(__dirname, `public/pages/home`)));
 
 const data = {
   config: {
