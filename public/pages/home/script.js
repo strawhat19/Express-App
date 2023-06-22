@@ -1,3 +1,11 @@
+let server = `http://localhost:3000`;
+let dataFromServer = `${server}/data`;
+let weatherFromServerURL = `${server}/weather`;
+ 
+fetch(weatherFromServerURL).then(resp => resp.json()).then(data => {
+    console.log(`OpenWeather Data from Server`, data);
+});
+
 let apiUrl = `https://randomuser.me/api/`;
 
 let elementsWhereWeDisplayData = document.querySelector(`.frontendApiDataToDisplay`);
@@ -33,15 +41,3 @@ fetch(openWeatherCurrentWeatherURL).then(resp => resp.json()).then(data => {
         console.log(`OpenWeather Data from Client`, dataFromOneCall);
     });
 });
-
-// let server = `http://localhost:3000`;
-// let dataFromServer = `${server}/data`;
-// let weatherFromServerURL = `${server}/weather`;
- 
-// fetch(weatherFromServerURL).then(resp => resp.json()).then(data => {
-//     console.log(`OpenWeather Data from Server`, data);
-// });
-
-// fetch(dataFromServer).then(resp => resp.json()).then(data => {
-//     console.log(`Data from Server`, data);
-// });

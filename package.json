@@ -1,0 +1,27 @@
+{
+  "name": "apifrontend",
+  "version": "1.0.0",
+  "description": "![License](https://img.shields.io/github/license/strawhat19/APIFrontEnd)\r ![State](https://img.shields.io/github/deployments/strawhat19/APIFrontEnd/Production)\r ![Total Lines](https://img.shields.io/tokei/lines/github/strawhat19/APIFrontEnd)\r ![Repo Size](https://img.shields.io/github/repo-size/strawhat19/APIFrontEnd)\r ![Release](https://img.shields.io/github/release/strawhat19/APIFrontEnd)",
+  "main": "script.js",
+  "scripts": {
+    "dev": "nodemon server.js & open http://localhost:3000",
+    "app": "concurrently \"nodemon server.js\" \"live-server public/pages/home\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.6",
+    "open": "^9.1.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "live-server": "^1.2.2",
+    "nodemon": "^2.0.22"
+  }
+}
