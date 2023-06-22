@@ -1,10 +1,10 @@
-let server = `http://localhost:3000`;
-let dataFromServer = `${server}/data`;
-let weatherFromServerURL = `${server}/weather`;
+// let server = `http://localhost:3000`;
+// let dataFromServer = `${server}/data`;
+// let weatherFromServerURL = `${server}/weather`;
  
-fetch(weatherFromServerURL).then(resp => resp.json()).then(data => {
-    console.log(`OpenWeather Data from Server`, data);
-});
+// fetch(weatherFromServerURL).then(resp => resp.json()).then(data => {
+//     console.log(`OpenWeather Data from Server`, data);
+// });
 
 let apiUrl = `https://randomuser.me/api/`;
 
