@@ -1,3 +1,4 @@
+// Import libraries we need from Node
 const fetch = require('node-fetch');
 const express = require('express');
 const request = require('request');
@@ -5,6 +6,7 @@ require('dotenv').config();
 const cors = require('cors');
 const path = require('path');
 
+// Define what we need to start the Express Server
 const port = process.env.PORT || 3000;
 
 const app = express();
