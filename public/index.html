@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Front End</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://piratechs.com/wp-content/uploads/2019/05/Icon.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./script.js" defer></script>
+</head>
+<body>
+ <header>
+   <h1>Express Server API Examples</h1>
+ </header>
+ <main>
+   <p>Here I am experimenting with deveral different API's, some that require API keys. When the call is made to these API's the API key is exposed in the network stack trace and waterfall view. To resolve this, I converted these API calls into my own REST API End Points from my server. Now when the call is made, the API key is not exposed.</p>
+   <div class="apisToDisplay">
+      <div id="randomUserAPIData" class="randomUser apiData dataLoading">
+         <svg id="userSpinner" class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+            <circle class="path" fill="none" stroke-width="3" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+         </svg>
+         <h2>Random User API</h2>
+         <img alt="randomUser image" class="imageToDisplay" src="" />
+         <h3 class="frontendApiDataToDisplay">frontEndData</h3>
+         <div class="randomUserAge metaData">Age: <span class="ageElem"></span></div>
+         <div class="randomUserLocation metaData">
+            <span class="streetAddress"></span>
+            <span class="cityStateZip"></span>
+            <span class="country"></span>
+         </div>
+      </div>
+      <div id="weatherAPIData" class="weather apiData dataLoading">
+         <svg id="weatherSpinner" class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+            <circle class="path" fill="none" stroke-width="3" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+         </svg>
+         <h2>OpenWeather API</h2>
+         <div class="rowThis">
+            <img alt="weather image" class="weatherIconToDisplay" src="" />
+            <div class="colThis">
+               <h3 class="weatherDataToDisplay"><span class="locationWeather"></span></h3>
+               <div class="currentTemp metaData"><span class="temp"></span></div>
+            </div>
+         </div>
+         <div class="lastUpdated metaData">Last Updated: <span class="time"></span></div>
+         <div class="coordinates weatherMeta metaData">Coordinates: <span class="coords"></span></div>
+         <button class="askUserLocation">Get Weather for your Location</button>
+      </div>
+   </div>
+   <div class="apisToDisplay">
+      <div id="nasaAPIData" class="nasa apiData dataLoading">
+         <svg id="nasaSpinner" class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+            <circle class="path" fill="none" stroke-width="3" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+         </svg>
+         <h2>NASA Image of the Day API</h2>
+         <div class="imgContainer"><img alt="nasa image of the day"  class="nasa" src="" /></div>
+         <h3 class="nasaEndData">nasaEndData</h3>
+         <div class="nasaPicDay metaData"><span class="imageDescription"></span></div>
+         
+      </div>
+   </div>
+ </main>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data.js"></script>
+</body>
+</html>
